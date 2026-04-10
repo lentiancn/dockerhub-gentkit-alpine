@@ -13,6 +13,7 @@ LABEL maintainer="Len <lentiancn@126.com>" \
 RUN set -eux && \
     apk update --no-cache && \
     apk upgrade --no-cache && \
+    apk del --no-cache pax-utils libcap libcap-utils libiconv 2>/dev/null || true && \
     rm -rf /var/cache/apk/* /tmp/* /var/tmp/* /root/.cache && \
     history -c
 
