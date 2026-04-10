@@ -5,11 +5,10 @@
 
 A project for building Docker image based on the 'alpine' base image.
 
-## Pull and run a new container
+## Pull and run into a new container
 
 ```shell
-$ sudo docker run -d \
---restart unless-stopped \
+$ sudo docker run -it \
 --name <your_container_name> \
 gentkit/alpine:latest
 ```
@@ -17,7 +16,7 @@ gentkit/alpine:latest
 ## Exec into the container
 
 ```shell
-# View container status
+# View container status. First run sudo docker start <your_container_name_or_your_container_id> if its status is not Up.
 $ sudo docker ps -a --filter "name=<your_container_name>"
 
 $ sudo docker exec -it <your_container_name or your_container_id> /bin/sh
