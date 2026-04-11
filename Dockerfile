@@ -3,6 +3,8 @@
 #
 # https://github.com/lentiancn/dockerhub-gentkit-alpine/blob/main/LICENSE
 #
+
+# If it is "unknown", cause the 'alpine' base image to fail the build to ensure the correct version is referenced.
 ARG IMAGE_VERSION="unknown"
 
 FROM alpine:${IMAGE_VERSION}
