@@ -25,6 +25,7 @@ LABEL maintainer="Len <lentiancn@126.com>" \
       org.opencontainers.image.version="${IMAGE_VERSION}" \
       org.opencontainers.image.created="${IMAGE_BUILD_DATE}"
 
+# Optimize system
 RUN set -eu && \
     # Extract Alpine Version from os-release and set welcome message
     ALPINE_VERSION=$(grep VERSION_ID /etc/os-release | cut -d'=' -f2) && \
