@@ -1,3 +1,8 @@
+#
+# MIT License
+#
+# https://github.com/lentiancn/dockerhub-gentkit-alpine/blob/main/LICENSE
+#
 ARG ALPINE_VERSION
 ARG IMAGE_BUILD_DATE
 
