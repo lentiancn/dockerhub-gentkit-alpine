@@ -3,10 +3,10 @@
 #
 # https://github.com/lentiancn/dockerhub-gentkit-alpine/blob/main/LICENSE
 #
-ARG ALPINE_VERSION=latest
+ARG ALPINE_VERSION
 ARG IMAGE_BUILD_DATE
 
-FROM alpine:${ALPINE_VERSION}
+FROM alpine:$ALPINE_VERSION
 
 LABEL maintainer="Len <lentiancn@126.com>" \
       description="A Docker image based on the 'alpine' base image." \
