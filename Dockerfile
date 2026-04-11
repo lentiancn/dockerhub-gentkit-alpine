@@ -4,7 +4,7 @@
 # https://github.com/lentiancn/dockerhub-gentkit-alpine/blob/main/LICENSE
 #
 ARG IMAGE_VERSION=latest
-ARG IMAGE_BUILD_DATE
+ARG IMAGE_BUILD_DATE="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
 
 FROM alpine:${IMAGE_VERSION}
 
